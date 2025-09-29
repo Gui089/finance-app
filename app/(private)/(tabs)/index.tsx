@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function Login() {
   return (
     <View>
       <Text>Home</Text>
