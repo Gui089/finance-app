@@ -2,7 +2,7 @@ import { createTheme } from "@shopify/restyle";
 
 const pallet = {
   honeydew: '#F1FFF3',
-  lightgreen: '#DFF7E2',
+  lightgreen: '#bff7c6ff',
   caribbeangreen: '#00D09E',
   cyprus: '#0E3E3E',
   fencegreen: '#052224',
