@@ -1,72 +1,104 @@
+import { AnimatedTabIcon } from "@/src/components/ animatedTabIcon";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useTheme } from '@shopify/restyle';
-import { Tabs } from 'expo-router';
-import React from 'react';
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { useTheme } from "@shopify/restyle";
+import { Tabs } from "expo-router";
+import React from "react";
+
 
 export default function TabLayout() {
   const theme = useTheme();
 
   return (
-      <Tabs
-        screenOptions={{
-          headerShown: false,
-          tabBarStyle: {
-            backgroundColor: theme.colors.lightgreen,
-            height: 100,
-            borderTopEndRadius: 36,
-            borderTopStartRadius: 36,
-            position:"absolute"
-          },
-          tabBarActiveBackgroundColor: theme.colors.primary,
-          tabBarItemStyle: {
-            borderRadius: 24,
-            width: 57,
-            height: 53,
-            margin: 10,
-            marginHorizontal:10,
-            overflow: 'hidden',
-          },
-          tabBarIconStyle: {
-            marginTop: 10
-          }
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          backgroundColor: theme.colors.lightgreen,
+          height: 90,
+          borderTopEndRadius: 32,
+          borderTopStartRadius: 32,
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          borderTopWidth: 0,
+          elevation: 10,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: -2 },
+          shadowOpacity: 0.1,
+          shadowRadius: 6,
+          alignItems:'center',
+          paddingTop:15
+        },
+        tabBarShowLabel: false,
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ focused }) => (
+            <AnimatedTabIcon
+              focused={focused}
+              icon={<Ionicons name="home-outline" size={26} color={theme.colors.void} />}
+              activeColor={theme.colors.primary}
+            />
+          ),
         }}
-      >
-        <Tabs.Screen
-          name="index"
-          options={{
-            title: '',
-            tabBarIcon: ({ color }) => <Ionicons name="home-outline" size={28} color={theme.colors.void} />,
-          }}
-        />
-        <Tabs.Screen
-          name="analysis/index"
-          options={{
-            title: '',
-            tabBarIcon: ({ color }) => <Ionicons name="analytics" size={28} color={theme.colors.void} />,
-          }}
-        />
-        <Tabs.Screen
-          name="category/index"
-          options={{
-            title: '',
-            tabBarIcon: ({ color }) => <Ionicons name="transgender-outline" size={28} color={theme.colors.void} />,
-          }}
-        />
-        <Tabs.Screen
-          name="transactions/index"
-          options={{
-            title: '',
-            tabBarIcon: ({ color }) => <MaterialIcons name="category" size={28} color={theme.colors.void} />,
-          }}
-        />
-        <Tabs.Screen
-          name="profile/index"
-          options={{
-            title: '',
-            tabBarIcon: ({ color }) => <Ionicons name="person-outline" size={28} color={theme.colors.void} />,
-          }}
-        />
-      </Tabs>
+      />
+      <Tabs.Screen
+        name="analysis/index"
+        options={{
+          title: "Análise",
+          tabBarIcon: ({ focused }) => (
+            <AnimatedTabIcon
+              focused={focused}
+              icon={<Ionicons name="analytics" size={26} color={theme.colors.void} />}
+              activeColor={theme.colors.primary}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="category/index"
+        options={{
+          title: "Categorias",
+          tabBarIcon: ({ focused }) => (
+            <AnimatedTabIcon
+              focused={focused}
+              icon={<Ionicons name="transgender-outline" size={26} color={theme.colors.void} />}
+              activeColor={theme.colors.primary}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="transactions/index"
+        options={{
+          title: "Transações",
+          tabBarIcon: ({ focused }) => (
+            <AnimatedTabIcon
+              focused={focused}
+              icon={<MaterialIcons name="category" size={26} color={theme.colors.void} />}
+              activeColor={theme.colors.primary}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile/index"
+        options={{
+          title: "Perfil",
+          tabBarIcon: ({ focused }) => (
+            <AnimatedTabIcon
+              focused={focused}
+              icon={<Ionicons name="person-outline" size={26} color={theme.colors.void} />}
+              activeColor={theme.colors.primary}
+            />
+          ),
+        }}
+      />
+    </Tabs>
   );
 }
