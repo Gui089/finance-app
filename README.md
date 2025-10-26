@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+<h1 align="center">💰 Nexus Finance</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <b>Controle inteligente das suas finanças pessoais com IA.</b><br/>
+  Análises, metas financeiras e insights personalizados em um só app.
+</p>
 
-## Get started
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc6b8c78-61e5-472c-87eb-e983993105bf" alt="C4 Model Nexus" width="700"/>
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🧭 Visão Geral
 
-2. Start the app
+O **Nexus Finance** é um aplicativo financeiro desenvolvido em **React Native + Expo**, que permite gerenciar suas **finanças pessoais**, definir **metas**, acompanhar **gastos e investimentos**, e receber **insights inteligentes com IA** para melhorar a saúde financeira.
 
-   ```bash
-   npx expo start
-   ```
+O projeto está sendo desenhado com foco em **escalabilidade**, **segurança de dados** e **experiência do usuário**.  
+A arquitetura é baseada no **C4 Model**, garantindo clareza e documentação sólida do sistema.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧩 Principais Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📊 **Análise Financeira Inteligente:** categorização automática de despesas e receitas.  
+- 🎯 **Metas Financeiras:** crie e acompanhe objetivos personalizados (ex: comprar um carro, quitar dívidas).  
+- 🤖 **Assistente com IA:** recomendações personalizadas baseadas em padrões de gasto.  
+- 💡 **Dashboard Dinâmico:** visualização intuitiva de saldo, fluxo de caixa e performance mensal.  
+- ☁️ **Sincronização Segura:** integração futura com armazenamento em nuvem (ex: Firebase, Supabase).  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🧱 Arquitetura do Sistema
 
-```bash
-npm run reset-project
-```
+O Nexus Finance segue o padrão **C4 Model**, promovendo uma documentação arquitetural clara e modular.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Nível 1 – System Context
+> Mostra como o Nexus Finance interage com os usuários e sistemas externos.
 
-## Learn more
+### Nível 2 – Container Diagram
+> Divide o sistema em containers lógicos (App Mobile, Backend API, Database, AI Service, etc).
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🧠 Tecnologias Utilizadas
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Categoria | Tecnologias |
+|------------|--------------|
+| **Frontend (Mobile)** | React Native, Expo, TypeScript |
+| **Gerenciamento de Estado** | Zustand / React Query |
+| **UI/UX** | React Native UI Lib / Reanimated / Lottie |
+| **IA & Insights** | TensorFlow.js / LangChain / Ollama |
+| **Backend (futuro)** | NestJS / Node.js / PostgreSQL |
+| **CI/CD** | EAS Build / Docker / GitHub Actions |
+| **Infraestrutura (planejada)** | AWS (Lambda, S3, RDS) |
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🧰 Estrutura do Projeto
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
