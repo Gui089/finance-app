@@ -54,7 +54,7 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<Ionicons name="analytics" size={26} color={theme.colors.void} />}
+              icon={<Ionicons name="analytics-sharp" size={26} color={theme.colors.void} />}
               activeColor={theme.colors.primary}
             />
           ),

@@ -35,6 +35,11 @@ export function BalanceInfo() {
         </View>
       </View>
       <ProgressBar />
+
+      <View style={styles.paragrahp}>
+        <Ionicons name="checkbox-outline" />
+        <Text style={{fontWeight:"300", fontSize:16}}>30% das suas despesas, parece bom.</Text>
+      </View>
     </View>
 
   )
@@ -63,5 +68,13 @@ const styles = StyleSheet.create({
     color: '#0068FF',
     fontSize: 22,
     fontWeight: '700',
+  },
+  paragrahp: {
+    flexDirection:"row",
+    justifyContent:"center",
+    alignItems:"center",
+    gap:8,
+    marginTop:10,
+    marginBottom:20
   }
 });
