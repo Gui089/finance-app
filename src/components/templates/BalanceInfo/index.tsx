@@ -10,8 +10,8 @@ export function BalanceInfo() {
       <View style={styles.container}>
         <View>
           <View style={styles.expensiveDiv}>
-            <Ionicons name="arrow-up-right-box-outline" size={14} />
-            <Text>
+            <Ionicons name="arrow-up-right-box-outline" size={14} color={"white"}/>
+            <Text style={{color:"white"}}>
               Saldo Total
             </Text>
           </View>
@@ -24,8 +24,8 @@ export function BalanceInfo() {
 
         <View>
           <View style={styles.expensiveDiv}>
-            <Ionicons name="arrow-down-right-box-outline" size={14} />
-            <Text>
+            <Ionicons name="arrow-down-right-box-outline" size={14} color={"white"}/>
+            <Text style={{color:"white"}}>
               Despesa Total
             </Text>
           </View>
@@ -37,8 +37,8 @@ export function BalanceInfo() {
       <ProgressBar />
 
       <View style={styles.paragrahp}>
-        <Ionicons name="checkbox-outline" />
-        <Text style={{fontWeight:"300", fontSize:16}}>30% das suas despesas, parece bom.</Text>
+        <Ionicons name="checkbox-outline" color={"white"}/>
+        <Text style={{fontWeight:"300", fontSize:16, color:"white"}}>30% das suas despesas, parece bom.</Text>
       </View>
     </View>
 

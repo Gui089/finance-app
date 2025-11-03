@@ -41,8 +41,8 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<Ionicons name="home-outline" size={26} color={theme.colors.void} />}
-              activeColor={theme.colors.primary}
+              icon={<Ionicons name="home-outline" size={26} color={ focused ? theme.colors.fencegreen : theme.colors.void} />}
+              activeColor={theme.colors.main}
             />
           ),
         }}
@@ -54,8 +54,8 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<Ionicons name="analytics-sharp" size={26} color={theme.colors.void} />}
-              activeColor={theme.colors.primary}
+              icon={<Ionicons name="analytics-sharp" size={26} color={ focused ? theme.colors.fencegreen : theme.colors.void} />}
+              activeColor={theme.colors.main}
             />
           ),
         }}
@@ -67,8 +67,8 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<Ionicons name="transgender-outline" size={26} color={theme.colors.void} />}
-              activeColor={theme.colors.primary}
+              icon={<Ionicons name="transgender-outline" size={26} color={ focused ? theme.colors.fencegreen : theme.colors.void} />}
+              activeColor={theme.colors.main}
             />
           ),
         }}
@@ -80,8 +80,8 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<MaterialIcons name="category" size={26} color={theme.colors.void} />}
-              activeColor={theme.colors.primary}
+              icon={<MaterialIcons name="category" size={26} color={ focused ? theme.colors.fencegreen : theme.colors.void} />}
+             activeColor={theme.colors.main}
             />
           ),
         }}
@@ -93,8 +93,8 @@ export default function TabLayout() {
           tabBarIcon: ({ focused }) => (
             <AnimatedTabIcon
               focused={focused}
-              icon={<Ionicons name="person-outline" size={26} color={theme.colors.void} />}
-              activeColor={theme.colors.primary}
+              icon={<Ionicons name="person-outline" size={26}color={ focused ? theme.colors.fencegreen : theme.colors.void} />}
+              activeColor={theme.colors.main}
             />
           ),
         }}

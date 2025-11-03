@@ -2,14 +2,15 @@ import { createTheme } from "@shopify/restyle";
 
 const pallet = {
   honeydew: '#F1FFF3',
-  lightgreen: '#bff7c6ff',
-  caribbeangreen: '#00D09E',
-  cyprus: '#0E3E3E',
+  lightgreen: '#0E3E3E',
+  caribbeangreen: '#052224',
+  cyprus: '#093030',
   fencegreen: '#052224',
-  void: '#031314',
+  void: '#DFF7E2',
   lightblue: '#6DB6FE',
   vividblue: '#3299FF',
-  oceanblue: '#0068FF'
+  oceanblue: '#0068FF',
+  maingreen: '#00D09E'
 }
 
 const theme = createTheme({
@@ -22,7 +23,8 @@ const theme = createTheme({
     void:pallet.void,
     lightblue:pallet.lightblue,
     vividblue:pallet.vividblue,
-    oceanblue:pallet.oceanblue
+    oceanblue:pallet.oceanblue,
+    main:pallet.maingreen
   },
   spacing: {
      default:16,

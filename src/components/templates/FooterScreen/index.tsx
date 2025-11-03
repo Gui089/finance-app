@@ -1,13 +1,15 @@
+import { Theme } from "@/src/theme/theme";
 import { useTheme } from "@shopify/restyle";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { CardCash } from "../../cardCash";
 
 export function FooterScreen() {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
   return (
     <View
-      style={[{ backgroundColor: theme.colors.secondary }, styles.container]}
+      style={[{ backgroundColor: theme.colors.cyprus }, styles.container]}
     >
-      <Text>Footer</Text>
+      <CardCash />
     </View>
   );
 }
